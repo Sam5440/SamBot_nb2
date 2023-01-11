@@ -1,0 +1,21 @@
+nonebot_plugin_autohelp:
+  group: {}
+  mode: '755'
+  status: true
+  user: {}
+nonebot_plugin_manager:
+  group: {}
+  mode: '311'
+  status: false
+  user: {}
+nonebot_plugin_status:
+  group: {}
+  mode: '755'
+  status: true
+  user: {}
+op_recharge:
+  group:
+    600181960: 5
+  mode: '755'
+  status: true
+  user: {}
