@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+# import sambot_nb2
 import nonebot
 from nonebot.adapters.onebot.v11 import Adapter as ONEBOT_V11Adapter
 
@@ -19,13 +19,13 @@ app = nonebot.get_asgi()
 
 driver = nonebot.get_driver()
 driver.register_adapter(ONEBOT_V11Adapter)
-
-#加载插件  plugin_dirs = ["sambot_nb2/plugins"]
+#加载插件
+nonebot.load_plugin('nonebot_plugin_xiuxian')
+# nonebot.load_plugins("sambot_nb2/plugins/nonebot_plugin_xiuxian")  
 # nonebot.load_plugins("sambot_nb2/plugins")
 # Please DO NOT modify this file unless you know what you are doing!
 # As an alternative, you should use command `nb` or modify `pyproject.toml` to load plugins
 nonebot.load_from_toml("pyproject.toml")
-
 # Modify some config / config depends on loaded configs
 # 
 # config = driver.config
